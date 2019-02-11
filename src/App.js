@@ -18,6 +18,7 @@ class App extends Component {
   }
 
   onUpdateUser({target}) {
+    // once you dispatch an action, one thing to remember is that all the reducers get called. 
     this.props.onUpdateUser(target.value);
   }
   render() {
